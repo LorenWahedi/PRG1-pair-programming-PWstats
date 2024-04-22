@@ -11,9 +11,23 @@ if (fs.existsSync(outputFile)) { // check for existing output file
 const data = fs.readFileSync(inputFile, "utf-8");
 const lines = data.split(/\n/);
 
+const passwordLengthCounts = [];
+
+passwordLengthCounts.forEach(password => { 
+  const length = password.length;
+  if (!password)
+})
+
+
+console.log("counter:" + counter.length);
+
 for (line of lines) {
-      
-      elements = line.split(delimiter);
-      console.log(elements)
+  
+      elements = line.split(delimiter)
+      const statisticsArr = new Array(20).fill(elements);
+      let elements = elements.split("");
+    
+      console.log(elements[1]);
+      console.log(Array.length);
 }
 
